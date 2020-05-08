@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Ruonan Liu"
 copyright = "© 2020 Ruonan Liu.  All Rights Reserved"
 theme = "npq-hugo"
+themesdir = "/themes/"
 pygmentsUseClasses=true
 
 [params]
