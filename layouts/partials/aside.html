@@ -1,0 +1,34 @@
+<aside id="sidenav">
+    <header>
+    {{if eq .Site.Params.useAvatar true}}
+        <a href={{ "" | absURL }}><img src="{{ "/images/avatar1.png"}}"></a>
+        
+    {{end}}
+
+    <a id="branding" href={{ "" | absURL }}>
+        Ruonan Liu
+    <a id="branding1" href={{ "http://www.tju.edu.cn/" }}>
+        Tianjin University
+<!--
+        {{with .Site.Params.logo}}
+            {{ . | safeHTML }}
+        {{else}}
+            {{ .Site.Title }}
+        {{end}}
+-->
+    </a>
+    </header>
+
+    <nav>
+        {{ range .Site.Menus.main }}
+            {{ $url := urls.Parse .URL }}		
+            <a href="{{ $url }}"
+                {{ if ne $url.Host ""}}
+                    target="_blanck"
+                {{end}}
+            >
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+        {{end}}
+</aside>

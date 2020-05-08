@@ -1,0 +1,57 @@
+#baseURL = "http://cic.tju.edu.cn/faculty/liuruonan/"
+languageCode = "en-us"
+title = "Ruonan Liu"
+copyright = "© 2020 Ruonan Liu.  All Rights Reserved"
+theme = "npq-hugo"
+pygmentsUseClasses=true
+
+[params]
+  author = "your name"
+  description = "your description"
+  keywords = "hugo blog"
+  useAvatar = true
+  microBlogSection = "posts"
+  displayMicroBlog = false
+  displayRecent = true
+  recentMax = 4
+  mail = "ruonan.liu@tju.edu.cn"
+  phone = "+86 15829035341"
+  formspreeID = "yourformspreeID"
+
+relativeURLs=true
+
+[menu]
+  [[menu.main]]
+    name = "home"
+    pre = "<i class=\"fas fa-home fa-sm\"></i>"
+    url = "/index/"
+    weight = -9 
+  [[menu.main]]
+    name = "research"
+    pre = "<i class=\"fas fa-microscope fa-ms\"></i>"
+    url = "/research/"
+    weight = -8
+  [[menu.main]]
+    name = "publication"
+    pre = "<i class=\"fas fa-book fa-ms\"></i>"
+    url = "/publications/"
+    weight = -7 
+  [[menu.main]]
+    name = "contact"
+    pre = "<i class=\"far fa-envelope\"></i>"
+    url = "/contact1/"
+    weight = -2
+
+  [[menu.main]]
+    name = "中文"
+    pre = "<i class=\"fas fa-language fa-ms\"></i>"
+    url = "/CN_index/"
+    weight = -1 
+
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+
+unsafe = true
